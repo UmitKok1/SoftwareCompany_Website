@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(224, 131, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 32px;
+}
+.container{
+    background-color: white;
+    max-width: 1000px;
+    height: 900px;
+    border-radius: 30px;
+    width: 100%;
+    padding: 30px;
+}
+.tabs{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    color: blueviolet;
+    font-weight: bold;
+}
+.tabs .active{
+    color: pink;
+    position: relative;
+
+}
+.tabs p:hover{
+    color: darkmagenta;
+    cursor: pointer;
+}
+.tabs .active::before{
+    content: '';
+    background-color: blueviolet;
+    width: 200%;
+    height: 4px;
+    position: absolute;
+    bottom: -7px;
+    left: -50%;
+    border-radius: 10px;
+}
+.line{
+    position: absolute;
+    height: 3px;
+    background-color: rgb(224, 131, 189);
+    width: 100%;
+    max-width: 1000px;
+    top: 13%;
+}
