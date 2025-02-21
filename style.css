@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(224, 131, 189);
     display: flex;
     justify-content: center;
@@ -6,10 +6,10 @@ body{
     margin: 0px;
     padding: 32px;
 }
-.container{
+
+.container {
     background-color: white;
     max-width: 1000px;
-    height: 900px;
     border-radius: 30px;
     width: 100%;
     padding: 30px;
@@ -18,7 +18,8 @@ body{
     align-items: center;
     /* justify-content: center; */
 }
-.tabs{
+
+.tabs {
     display: flex;
     justify-content: space-evenly;
     text-transform: uppercase;
@@ -26,16 +27,19 @@ body{
     font-weight: bold;
     width: 100%;
 }
-.tabs .active{
+
+.tabs .active {
     color: pink;
     position: relative;
 
 }
-.tabs p:hover{
+
+.tabs p:hover {
     background-color: darkmagenta;
     cursor: pointer;
 }
-.tabs .active::before{
+
+.tabs .active::before {
     content: '';
     background-color: blueviolet;
     width: 200%;
@@ -45,14 +49,16 @@ body{
     left: -50%;
     border-radius: 10px;
 }
-.line{
+
+.line {
     position: relative;
     height: 3px;
     background-color: rgb(224, 131, 189);
     width: 100%;
     margin-top: 16px;
 }
-.customers{
+
+.customers {
     background-color: blueviolet;
     width: 50%;
     color: white;
@@ -63,15 +69,86 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-transform: uppercase;
 }
-.customers .number{
+
+.customers .number {
     font-size: 54px;
     margin: 0;
 }
-.customers .title{
+
+.customers .title {
     font-size: 12px;
     font-weight: bold;
     margin: 16px 0 0 0;
 }
-.message{
-    
+
+.message {}
+
+.cardContainer {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
 }
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: relative; */
+}
+.professional{
+    background-color: rgb(217, 147, 226);
+    color: white;
+    position: absolute;
+    left: 0;
+    top: -25px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.card:hover {
+    transform: translateY(-8px);
+    transition: 0.2 transform ease;
+}
+
+.card .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.card .title p {
+    margin: 4px 0px;
+}
+
+.card .price {
+    font-size: 42px;
+}
+
+.card hr {
+    width: 30%;
+    border: 1px solid blueviolet;
+    border-radius: 2px;
+}
+
+.card button {
+    border: none;
+    padding: 16px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+
+.card button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s transform ease;
+}
+
+/*  */
